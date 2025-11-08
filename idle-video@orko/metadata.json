@@ -1,7 +1,9 @@
 {
   "uuid": "idle-video@orko",
   "name": "Idle Video",
-  "description": "Plays a chosen video when the screen is idle. Provides preferences for video path, idle seconds, and mute.",
-  "shell-version": ["40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50"],
-  "version": 1
+  "description": "Plays a video when system is idle. Features video validation, preview, configurable idle time, and mute option. Perfect for ambient videos, screensavers, or information displays.",
+  "shell-version": ["46", "47"],
+  "version": 1,
+  "url": "https://github.com/Kaval-Rathod/Idle-Video-gnome",
+  "settings-schema": "org.gnome.shell.extensions.idlevideo"
 }

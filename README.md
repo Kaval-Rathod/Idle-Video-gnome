@@ -217,15 +217,36 @@ gsettings --schemadir ~/.local/share/gnome-shell/extensions/idle-video@orko/sche
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
+**See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.**
+
+### Quick Start for Contributors:
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
+**Note**: This is free open source. No commercial use without owner's permission.
 
-This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) file for details.
+## 📝 License & Ownership
+
+**Owner**: Kaval Rathod ([@Kaval-Rathod](https://github.com/Kaval-Rathod))
+
+This project is **free and open source** software licensed under the GPL-3.0 License.
+
+### What This Means:
+- ✅ **FREE** to use for everyone
+- ✅ **FREE** to modify and improve
+- ✅ **FREE** to distribute
+- ✅ **Open for contributions** from anyone
+- ❌ **NO commercial sale** without owner's permission
+- ❌ **NO profit** from this extension without owner's consent
+
+See the [LICENSE](LICENSE) file for full details.
+
+### Contributing
+Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+All contributors will be credited in [CONTRIBUTORS.md](CONTRIBUTORS.md).
 
 ## 🙏 Acknowledgments
 
