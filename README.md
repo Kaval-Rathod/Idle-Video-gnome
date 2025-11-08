@@ -8,6 +8,7 @@ A polished GNOME Shell extension that plays a video when your system is idle. Pe
 ## ✨ Features
 
 - 🎥 **Automatic Video Playback** - Plays your chosen video when system is idle
+- 🎵 **Smart Audio Detection** - Won't play video if audio is already playing (e.g., YouTube, music, podcasts)
 - ⏱️ **Configurable Idle Time** - Set idle duration from 5 seconds to 1 hour
 - 🔇 **Mute Option** - Choose to play video with or without sound
 - 👁️ **Video Preview** - Test your video before applying
@@ -61,18 +62,19 @@ gnome-extensions enable idle-video@orko
 - **Dependencies**:
   - `xprintidle` - For idle detection on X11
   - `mpv` - Video player
+  - `pulseaudio-utils` or `pipewire-pulse` - For audio playback detection (prevents video from playing when audio is active)
 
 ### Install Dependencies
 
 ```bash
 # Ubuntu/Debian
-sudo apt install xprintidle mpv
+sudo apt install xprintidle mpv pulseaudio-utils
 
 # Fedora
-sudo dnf install xprintidle mpv
+sudo dnf install xprintidle mpv pulseaudio-utils
 
 # Arch Linux
-sudo pacman -S xprintidle mpv
+sudo pacman -S xprintidle mpv libpulse
 ```
 
 ## 🎯 Usage
