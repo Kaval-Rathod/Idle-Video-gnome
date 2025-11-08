@@ -87,7 +87,7 @@ function _startMpv() {
     const mpvArgs = [
         'mpv',
         '--fs',
-        '--loop=no',
+        '--loop=inf',
         '--no-osc',
         '--really-quiet',
         '--no-input-terminal'
