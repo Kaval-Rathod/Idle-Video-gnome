@@ -63,6 +63,23 @@ function _getIdleTime() {
     return 0;
 }
 
+function _isAudioPlaying() {
+    try {
+        // Use pactl to check if any audio sink-input is running (works with PulseAudio and PipeWire)
+        const [success, stdout] = GLib.spawn_command_line_sync('pactl list sink-inputs');
+        if (success) {
+            const output = new TextDecoder().decode(stdout);
+            // Check if there's at least one sink input with state RUNNING
+            // Sink inputs represent active audio streams
+            return output.includes('State: RUNNING');
+        }
+    } catch (e) {
+        // If pactl is not available, log once but continue
+        console.log('idle-video@orko: pactl not available, skipping audio check: ' + e);
+    }
+    return false;
+}
+
 function _startMpv() {
     if (_mpvPid !== null) {
         return; // Already playing
@@ -147,9 +164,14 @@ function _checkIdle() {
     const idleMs = _getIdleTime();
     const idleThresholdMs = idleSeconds * 1000;
 
-    if (idleMs >= idleThresholdMs) {
+    // Check if audio is currently playing (e.g., YouTube, music, etc.)
+    const audioPlaying = _isAudioPlaying();
+
+    // Only start video if idle AND no audio is playing
+    if (idleMs >= idleThresholdMs && !audioPlaying) {
         _startMpv();
     } else {
+        // Stop video if user becomes active OR audio starts playing
         _stopMpv();
     }
 
