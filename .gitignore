@@ -1,0 +1,23 @@
+# Ignore compiled schema
+gschemas.compiled
+
+# Ignore backup files
+*~
+*.bak
+*.swp
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.code-workspace
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+.temp/

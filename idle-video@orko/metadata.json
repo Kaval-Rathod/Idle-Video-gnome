@@ -1,0 +1,7 @@
+{
+  "uuid": "idle-video@orko",
+  "name": "Idle Video",
+  "description": "Plays a chosen video when the screen is idle. Provides preferences for video path, idle seconds, and mute.",
+  "shell-version": ["40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50"],
+  "version": 1
+}
