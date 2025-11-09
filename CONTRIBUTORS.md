@@ -12,9 +12,14 @@ Thank you to everyone who has contributed to Idle Video GNOME Extension!
 
 ## 🌟 Contributors
 
-<!-- Add contributors here as they contribute -->
+# Contributors
 
-_Be the first to contribute! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines._
+Thank you to everyone who has contributed!
+
+[<img src="https://github.com/Kaval-Rathod.png?size=48" width="48" height="48" alt="Kaval-Rathod"/>](https://github.com/Kaval-Rathod)
+[<img src="https://github.com/shalinibhavi525-sudo.png?size=48" width="48" height="48" alt="shalinibhavi525-sudo"/>](https://github.com/shalinibhavi525-sudo)
+
+_Become a contributor! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines._
 
 ## 🙏 Acknowledgments
 
